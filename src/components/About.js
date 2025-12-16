@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import aboutImg from "../girl_coding.png"; // FIXED PATH
+import aboutImg from "../nargishgul.png"; // FIXED PATH
 
 const About = () => (
   <section id="about" className="py-5">
@@ -10,17 +10,18 @@ const About = () => (
       <Row>
         <Col md={5}>
           
-          <div className="col-md-5">
+          <div className="profile-img-container">
             <img
               src={aboutImg}
               alt="Nargish Gul"
+              className="portfolio-img"
               
             />
           </div>
 
         </Col>
         <Col md={7}>
-        <div className="col-md-7">
+        <div className="about-me-text">
           <p>I am a passionate developer building full-stack and frontend applications focusing on clean UI, performance and maintainable code.</p>
           <ul>
             <li>Frontend: React, Bootstrap, HTML, CSS, JS</li>

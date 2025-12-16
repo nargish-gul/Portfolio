@@ -2,16 +2,39 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 
 const ProjectCard = ({ project }) => (
-  <Card className="mb-4 card-project">
+  <Card className="card-project">
     <Card.Body>
-      <div style={{height:140, borderRadius:8, marginBottom:12, background:"linear-gradient(135deg,#e6f0ff,#dbeafe)"}}/>
-      <Card.Title>{project.title}</Card.Title>
-      <Card.Text>{project.desc}</Card.Text>
-      <div className="mb-2">
-        {project.tech.map((t,i)=>(<span key={i} className="badge bg-secondary me-1">{t}</span>))}
+
+      <div
+        className="project-container1"
+        style={{ height: 140, borderRadius: 8, marginBottom: 12 }}
+      >
+        <img
+          src={project.image}
+          alt={project.title}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            borderRadius: 8
+          }}
+        />
       </div>
-      <Button className="me-2">View</Button>
-      <Button variant="outline-primary">Code</Button>
+
+      <Card.Title className="card-title">{project.title}</Card.Title>
+      <Card.Text className="card-desc">{project.desc}</Card.Text>
+
+      <div className="mb-2">
+        {project.tech.map((t, i) => (
+          <span key={i} className="badge bg-secondary me-1">{t}</span>
+        ))}
+      </div>
+
+      
+      <Button variant="outline-primary"
+      href={project.code}
+        target="_blank">Code</Button>
+
     </Card.Body>
   </Card>
 );

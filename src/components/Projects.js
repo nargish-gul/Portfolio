@@ -3,11 +3,35 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 
 const allProjects = [
-  {id:1, title:"College Website", tech:["html","css","js","mysql","php"], desc:"College website with registration forms."},
-  {id:2, title:"Employee Management", tech:["django","mysql","drf","bootstrap"], desc:"Django app with admin & APIs."},
-  {id:3, title:"Portfolio", tech:["react","bootstrap","django"], desc:"This portfolio built with React & Bootstrap."},
+  {
+    id: 1,
+    title: "College Website",
+    tech: ["html","css","js","mysql","php"],
+    desc: "Responsive website with registration forms and database integration.",
+    image: "/college.jpg",
+    
+    code: "https://github.com/Dearmodi/College_Project"
+  },
+  {
+    id: 2,
+    title: "Employee Management",
+    tech: ["django","mysql","drf","bootstrap"],
+    desc: "Django app for managing employee records with APIs.",
+    image: "/employee.jpg",
   
+    code: "https://github.com/nargish-gul/Employee-Management-System-Django"
+  },
+  {
+    id: 3,
+    title: "Portfolio",
+    tech: ["react","bootstrap","django"],
+    desc: "Personal portfolio built with React and Bootstrap to showcase projects and skills.",
+    image: "/portfolio.png",
+    
+    code: "https://github.com/nargish-gul/Portfolio"
+  }
 ];
+
 
 const tags = ["all","react","django","html","css","js","mysql","drf","bootstrap"];
 
