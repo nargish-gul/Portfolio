@@ -28,7 +28,7 @@ const About = () => (
             <li>DB: MySQL</li>
           </ul>
           </div>
-          <a href="/Nargish_Gul Resume.PDF" download className="btn btn-primary mt-2">Download Resume</a>
+          <a href="D:\Portfolio\portfolio\public\Nargish_Gul Resume.pdf" download className="btn btn-primary mt-2">Download Resume</a>
         </Col>
       </Row>
     </Container>
